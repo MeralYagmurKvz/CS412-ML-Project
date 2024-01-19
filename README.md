@@ -13,7 +13,7 @@
      2.1 Features based on Prompt Matching.
 
   - Upon reflection, we recognized the limitations of utilizing similarity sums for grading purposes. Our approach involved calculating the summed similarity coefficient for each question per student and subsequently scaling the values. The scaling aimed to assign the highest grade to the maximum coefficient and zero points to the minimum coefficient. However, upon reviewing the resulting grades for each question across all students, we determined that this method was not suitable for our specific case.The reason why we concluded that is because when we sum the similarity across columns (so summation of similarity of a question with each prompt), the result tends to get much bigger for some students which is likely to mislead the end result. .Consequently, we decided not to pursue it any further.
-  - Subsequently, we shifted our focus to choosing the maximum similarity of each question with the corresponding prompts. In this process, considering a set of 14 prompts for each user, we calculated 14 correlation coefficients for every question. The resulting table provided us with a range of similarity values for each question across the prompts. We then identified the maximum similarity for each question and student, storing this information in an array.To enhance interpretability, we normalized these similarity coefficients, scaling them between 0 and 1. Leveraging the scaled factors, we assigned a grade to each question for every student. Upon reviewing the grades, we found them to be meaningful and valuable. Subsequently, we aggregated the grades for each question and computed the final grade for each student. This final grade, seemed reasonable and indicative, was then incorporated as a distinctive feature in our approach.In total, we integrated nine features from this methodology, including eight similarity coefficients corresponding to eight questions and one final grade.
+  - Subsequently, we shifted our focus to choosing the maximum similarity of each question with the corresponding prompts. In this process, considering a set of 14 prompts for each user, we calculated 14 correlation coefficients for every question. The resulting table provided us with a range of similarity values for each question across the prompts. We then identified the maximum similarity for each question and student, storing this information in an array.To enhance interpretability, we normalized these similarity coefficients, scaling them between 0 and 1. Leveraging the scaled factors, we assigned a grade to each question for every student. Upon reviewing the grades, we found them to be meaningful and valuable. Subsequently, we aggregated the grades for each question and computed the final grade for each student. This final grade, seemed reasonable and indicative, was then incorporated as a distinctive feature in our approach.In total, we integrated nine features from this methodology, including eight similarity coefficients corresponding to eight questions and one final grade. We tried eliminating the outliers, however the results we obtained were worse, that's why we decided to leave the outliers. (Outliers are the ChatGPT histories that didn't have any prompts related to the homework questions hence received 0 grade)
 
     2.2 Features based on statistics of the prompt.
 
@@ -47,6 +47,18 @@
 | --------- | -------- | -------- | ------------------ |
 | 0.0       | 2.6      | 1.0      | 0.9768406350654163 |
 
+## Things could be added
 
+1. We thought of searching synonyms of the keywords in homework questions in the prompts to increase the performance, however it is computationally expensive and time consuming
+2. Neural Network can be used to both extract features and train the model that is suited for the purpose of this project 
 
 # Team contributions
+
+Meral Yağmur Kavaz - 28115
+Melisa Çember - 29536
+Ece Erten - 27962
+Bora Küçükarslan - 28279
+Ozan Erden - 29130
+
+Since the project is too complicated to divide between team members, we conducted regular Zoom meetings every other day, where we collectively coded, debugged, and made decisions as a team. Also, since we are all new to Github, to be more feasible, we chose to work from a single GitHub account, maintaining a unified project structure. Leadership roles were rotated during meetings, ensuring everyone had a chance to guide discussions. We collectively addressed challenges, such as data preprocessing and model evaluation, through open communication and shared problem-solving sessions.
+
