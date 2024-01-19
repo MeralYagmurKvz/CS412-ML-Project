@@ -5,7 +5,7 @@
 
   ## Methodology
 
-  1. PreProcess
+1. PreProcess
  - We applied pre-processing to all functions that were already available to us which were "prompts", "code2convos", "code2prompts", and "questions".  We applied stemming methods which we learned throughout the semester to each of the outputs of these functions. Also, in code2convos and code2prompts functions, name of the user and the chatgpt were seen in the html files which prevented us to apply stemming for some reason. So we removed those titles from the data and separated the prompts of the user and the responses of the chatgpt. After all these steps, we had each prompt of the user, each response of chatgpt to each prompt and all questions pre-processed and ready to be used in upcoming steps (i.e. finding similarity coefficients or applying statistics.)
 
   2. Extracted Features
