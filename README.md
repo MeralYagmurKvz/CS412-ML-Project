@@ -60,5 +60,5 @@ Ece Erten - 27962
 Bora Küçükarslan - 28279
 Ozan Erden - 29130
 
-Since the project is too complicated to divide between team members, we conducted regular Zoom meetings every other day, where we collectively coded, debugged, and made decisions as a team. Also, since we are all new to Github, to be more feasible, we chose to work from a single GitHub account, maintaining a unified project structure. Leadership roles were rotated during meetings, ensuring everyone had a chance to guide discussions. We collectively addressed challenges, such as data preprocessing and model evaluation, through open communication and shared problem-solving sessions.
+Since the project is too complicated to divide between team members, we conducted regular Zoom meetings every other day, where we collectively coded, debugged, and made decisions as a team. Also, since we are all new to Github, to be more feasible, we chose to work from a single GitHub account, maintaining a unified project structure. Leadership roles were rotated during meetings, ensuring everyone had a chance to guide discussions. We collectively addressed challenges, such as data preprocessing and model evaluation, through open communication and shared problem-solving sessions. During the meetings, we wrote the code on Visual Studio and uploaded to GitHub as a file.
 
