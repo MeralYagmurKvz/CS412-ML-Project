@@ -1,6 +1,7 @@
 # Overview of Repository and Methodology
 
 - Our codes are in "hw_score_predict.ipynb" file
+- Original code is in "hw_score_predict2.ipynb" file
 
   ## Methodology
 
